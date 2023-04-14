@@ -5,7 +5,7 @@
   <arg name="z_pos" default="0.00"/>
   <arg name="roll" default="0.00"/>
   <arg name="pitch" default="0.00"/>
-  <arg name="yaw" default="0.00"/>
+  <arg name="yaw" default="-1.57"/>
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
     <arg name="world_name" value="$(find miniproj)/worlds/new_track.world"/>
@@ -18,8 +18,9 @@
 
 	<param name="robot_description" command="$(find xacro)/xacro --inorder $(find miniproj)/description/crobot.urdf.xacro" />
 	
-	<!-- <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/> -->
-	<!-- <node pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" name="joint_state_publisher_gui" output="screen" /> -->
+	<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+  <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher" />
+	<!-- <node pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" name="joint_state_publisher_gui" /> -->
   <!-- <node name="rviz" pkg="rviz" type="rviz"/> -->
 
   <node pkg="gazebo_ros" type="spawn_model" name="spawn_urdf" args="-urdf -model $(arg model) -x $(arg x_pos) -y $(arg y_pos) -z $(arg z_pos) -R $(arg roll) -P $(arg pitch) -Y $(arg yaw) -param robot_description" />
