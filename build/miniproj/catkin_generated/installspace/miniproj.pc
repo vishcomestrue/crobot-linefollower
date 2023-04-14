@@ -1,0 +1,8 @@
+prefix=/home/rosmachine/project_ws/install
+
+Name: miniproj
+Description: Description of miniproj
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
