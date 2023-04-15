@@ -2,4 +2,5 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="crobot">
 	<xacro:include filename="crobot_core.xacro" />
 	<xacro:include filename="crobot_control.xacro" />
+	<xacro:include filename="crobot_camera.xacro" />
 </robot>
