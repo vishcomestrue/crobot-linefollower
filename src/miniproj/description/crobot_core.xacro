@@ -170,7 +170,7 @@
 
 	<joint name="camera_joint" type="fixed">
 		<axis xyz="0 1 0" />
-		<origin xyz="0.17 0 0.35" rpy="0 ${pi/6} ${pi}" />
+		<origin xyz="0.17 0 0.5" rpy="0 ${pi/5} ${pi}" />
 		<parent link="chassis" />
 		<child link="camera_link" />
 	</joint>

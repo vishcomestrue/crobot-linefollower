@@ -43,7 +43,7 @@ def camera_callback(data):
         cv.circle(mask_image, (cx, cy), 10, (0,0,255), -1)
       
         error_x = cx - (w/2)
-        twist.linear.x = -0.15
+        twist.linear.x = -0.2
         twist.linear.y = 0
         twist.linear.z = 0
         twist.angular.x = 0
