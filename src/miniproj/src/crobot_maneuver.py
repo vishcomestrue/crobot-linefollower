@@ -40,7 +40,7 @@ def camera_callback(data):
     if M['m00'] > 0:
         cx = int(M['m10']/M['m00'])
         cy = int(M['m01']/M['m00'])
-        cv.circle(mask_image, (cx, cy), 20, (0,0,255), -1)
+        cv.circle(mask_image, (cx, cy), 10, (0,0,255), -1)
       
         error_x = cx - (w/2)
         twist.linear.x = -0.15
@@ -50,7 +50,8 @@ def camera_callback(data):
         twist.angular.y = 0
         twist.angular.z = 0
         if(abs(error_x) > 5):
-            twist.angular.z = -(float(error_x)/1000)
+            twist.linear.x = -0.1
+            twist.angular.z = -(float(error_x)/800)
         velPub(twist)
 
     # cv.imshow("Orig Image", cv_image)
