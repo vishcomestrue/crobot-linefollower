@@ -43,13 +43,13 @@ def camera_callback(data):
         cv.circle(mask_image, (cx, cy), 10, (0,0,255), -1)
       
         error_x = cx - (w/2)
-        twist.linear.x = -0.2
+        twist.linear.x = -0.25
         twist.linear.y = 0
         twist.linear.z = 0
         twist.angular.x = 0
         twist.angular.y = 0
         twist.angular.z = 0
-        if(abs(error_x) > 5):
+        if(abs(error_x) > 2):
             twist.linear.x = -0.1
             twist.angular.z = -(float(error_x)/800)
         velPub(twist)
