@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rosmachine/project_ws/src
+CMAKE_SOURCE_DIR = /home/vishwa/miniproj_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rosmachine/project_ws/build
+CMAKE_BINARY_DIR = /home/vishwa/miniproj_ws/build
 
 # Utility rule file for gazebo_msgs_generate_messages_py.
 
@@ -63,10 +63,10 @@ miniproj/CMakeFiles/gazebo_msgs_generate_messages_py.dir/build: gazebo_msgs_gene
 .PHONY : miniproj/CMakeFiles/gazebo_msgs_generate_messages_py.dir/build
 
 miniproj/CMakeFiles/gazebo_msgs_generate_messages_py.dir/clean:
-	cd /home/rosmachine/project_ws/build/miniproj && $(CMAKE_COMMAND) -P CMakeFiles/gazebo_msgs_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/vishwa/miniproj_ws/build/miniproj && $(CMAKE_COMMAND) -P CMakeFiles/gazebo_msgs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : miniproj/CMakeFiles/gazebo_msgs_generate_messages_py.dir/clean
 
 miniproj/CMakeFiles/gazebo_msgs_generate_messages_py.dir/depend:
-	cd /home/rosmachine/project_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rosmachine/project_ws/src /home/rosmachine/project_ws/src/miniproj /home/rosmachine/project_ws/build /home/rosmachine/project_ws/build/miniproj /home/rosmachine/project_ws/build/miniproj/CMakeFiles/gazebo_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vishwa/miniproj_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vishwa/miniproj_ws/src /home/vishwa/miniproj_ws/src/miniproj /home/vishwa/miniproj_ws/build /home/vishwa/miniproj_ws/build/miniproj /home/vishwa/miniproj_ws/build/miniproj/CMakeFiles/gazebo_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : miniproj/CMakeFiles/gazebo_msgs_generate_messages_py.dir/depend
 

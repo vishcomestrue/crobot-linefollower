@@ -1,8 +1,8 @@
-# Install script for directory: /home/rosmachine/project_ws/src/miniproj
+# Install script for directory: /home/vishwa/miniproj_ws/src/miniproj
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/rosmachine/project_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/vishwa/miniproj_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/rosmachine/project_ws/build/miniproj/catkin_generated/installspace/miniproj.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/vishwa/miniproj_ws/build/miniproj/catkin_generated/installspace/miniproj.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/miniproj/cmake" TYPE FILE FILES
-    "/home/rosmachine/project_ws/build/miniproj/catkin_generated/installspace/miniprojConfig.cmake"
-    "/home/rosmachine/project_ws/build/miniproj/catkin_generated/installspace/miniprojConfig-version.cmake"
+    "/home/vishwa/miniproj_ws/build/miniproj/catkin_generated/installspace/miniprojConfig.cmake"
+    "/home/vishwa/miniproj_ws/build/miniproj/catkin_generated/installspace/miniprojConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/miniproj" TYPE FILE FILES "/home/rosmachine/project_ws/src/miniproj/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/miniproj" TYPE FILE FILES "/home/vishwa/miniproj_ws/src/miniproj/package.xml")
 endif()
 

@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/rosmachine/project_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/vishwa/miniproj_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/rosmachine/project_ws/build/gtest/googlemock/cmake_install.cmake")
+  include("/home/vishwa/miniproj_ws/build/gtest/googlemock/cmake_install.cmake")
 
 endif()
 

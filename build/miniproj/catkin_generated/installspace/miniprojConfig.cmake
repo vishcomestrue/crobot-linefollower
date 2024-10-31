@@ -67,14 +67,14 @@ set(miniproj_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(miniproj_SOURCE_PREFIX /home/rosmachine/project_ws/src/miniproj)
-  set(miniproj_DEVEL_PREFIX /home/rosmachine/project_ws/devel)
+  set(miniproj_SOURCE_PREFIX /home/vishwa/miniproj_ws/src/miniproj)
+  set(miniproj_DEVEL_PREFIX /home/vishwa/miniproj_ws/devel)
   set(miniproj_INSTALL_PREFIX "")
   set(miniproj_PREFIX ${miniproj_DEVEL_PREFIX})
 else()
   set(miniproj_SOURCE_PREFIX "")
   set(miniproj_DEVEL_PREFIX "")
-  set(miniproj_INSTALL_PREFIX /home/rosmachine/project_ws/install)
+  set(miniproj_INSTALL_PREFIX /home/vishwa/miniproj_ws/install)
   set(miniproj_PREFIX ${miniproj_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/rosmachine/project_ws/install/lib;/home/rosmachine/project_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/vishwa/miniproj_ws/install/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

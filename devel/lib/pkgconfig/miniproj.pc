@@ -1,4 +1,4 @@
-prefix=/home/rosmachine/project_ws/devel
+prefix=/home/vishwa/miniproj_ws/devel
 
 Name: miniproj
 Description: Description of miniproj
